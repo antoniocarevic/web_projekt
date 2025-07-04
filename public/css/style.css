@@ -1,0 +1,111 @@
+body { 
+    padding-top:100px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    border: 1px solid #212529;
+    box-shadow: none;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #b79955 !important;
+    transition: color 0.2s;
+}
+
+#logout-btn {
+    background: transparent;
+    color: #b79955;
+    border: 2px solid #b79955;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+#logout-btn:hover,
+#logout-btn:focus {
+    background: #b79955;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(183,153,85,0.18);
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .responsive-nav {
+        margin: 0 auto !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .responsive-nav .nav-item {
+        margin: 0.2rem;
+    }
+    
+    .responsive-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    #logout-btn {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .responsive-nav .nav-item {
+        margin: 0.1rem 0;
+    }
+}
+
+#user-search {
+    background: #343a40 !important;
+    border: 1px solid #495057 !important;
+    color: #fff !important;
+    transition: all 0.2s;
+}
+
+#user-search:focus {
+    background: #495057 !important;
+    border-color: #b79955 !important;
+    box-shadow: 0 0 0 0.2rem rgba(183,153,85,0.25) !important;
+    color: #fff !important;
+}
+
+#user-search::placeholder {
+    color: #adb5bd !important;
+}
+
+#search-dropdown {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.search-result-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background 0.2s;
+}
+
+.search-result-item:hover {
+    background: #f8f9fa;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}

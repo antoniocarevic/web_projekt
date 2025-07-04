@@ -1,0 +1,57 @@
+#popular-books-table th:last-child,
+#popular-books-table td:last-child {
+    width: 30px;
+    max-width: 40px;
+    min-width: 24px;
+    text-align: right;
+    padding-right: 0.3rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.compact-table {
+    max-width: 340px;
+    min-width: 260px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    background: #fff;
+}
+
+.compact-table th,
+.compact-table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .compact-table {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+#popular-books-table img,
+#recommended-books-table img {
+    height: 32px;
+    width: 24px;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #f4f4f4;
+    display: block;
+    margin: 0 auto;
+}
+
+#latest-books-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+#latest-books-row::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+#latest-books-row > div {
+    flex: 0 0 auto;
+}

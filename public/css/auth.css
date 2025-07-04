@@ -1,0 +1,37 @@
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2rem 2rem 1.5rem 2rem;
+}
+
+.auth-logo {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    height: 60px;
+}
+
+.separator {
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    color: #888;
+    font-size: 1rem;
+}
+
+.logo-bg {
+    background: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 12px 0;
+    margin-bottom: 1.2rem;
+}
+
+.auth-logo {
+    height: 100px;
+    width: auto;
+    display: block;
+}
